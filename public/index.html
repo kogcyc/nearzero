@@ -1,10 +1,12 @@
-<script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.83/dist/shoelace.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.83/dist/themes/light.css" />
+<link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
 
-<sl-input type="number" id="a" label="A"></sl-input>
-<sl-input type="number" id="b" label="B"></sl-input>
-<sl-button onclick="add()">Add</sl-button>
-<p id="result"></p>
+<main class="container">
+  <h1>Calculator</h1>
+  <input type="number" id="a">
+  <input type="number" id="b">
+  <button onclick="add()">Add</button>
+  <p id="result"></p>
+</main>
 
 <script>
   function add() {
