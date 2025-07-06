@@ -1,1 +1,18 @@
-nearzero
+
+<link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+
+<main class="container">
+  <h1>Calculator</h1>
+  <input type="number" id="a">
+  <input type="number" id="b">
+  <button onclick="add()">Add</button>
+  <p id="result"></p>
+</main>
+
+<script>
+  function add() {
+    const a = Number(document.getElementById("a").value);
+    const b = Number(document.getElementById("b").value);
+    document.getElementById("result").textContent = `Result: ${a + b}`;
+  }
+</script>
