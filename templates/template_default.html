@@ -1,4 +1,16 @@
+{% include "partial_header.html" %}
+  
+<body>
+  
+  <header></header>
+  
 <h1>{{ title }}</h1>
-<div class="page-content">
+<main class="page-content">
       {{ content|safe }}
-</div>
+</main>
+
+<% include partial_footer.html %>
+</body>
+</html>
+
+
